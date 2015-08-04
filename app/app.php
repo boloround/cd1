@@ -15,10 +15,10 @@
         $output = "";
         foreach ($cds as $album) {
             $output = $output . "<div class='row'>
-                <div class='col-md-6'>
-                <img src=" . $album->getCoverArt() . ">
+                <div class='col-md-3'>
+                <img class='img-responsive' src=" . $album->getCoverArt() . ">
                 </div>
-                <div class='col-md-6'>
+                <div class='col-md-9'>
                     <p>". $album->getTitle() . "</p>
                     <p>By " . $album->getArtist() . "</p>
                     <p>$" . $album->getPrice() . "</p>
